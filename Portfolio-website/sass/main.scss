@@ -1,0 +1,293 @@
+@import "colors";
+@import "fonts";
+@import "reusable";
+
+* {
+    margin: 0;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+.header {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .nav-bar {
+        height: 8rem;
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: $color-dark-blue;
+
+
+
+        .left-text {
+            padding: 3rem;
+            font-size: 2.5rem;
+            width: 50%;
+            color: $color-white;
+            cursor: pointer;
+
+            span {
+                color: black;
+            }
+        }
+
+        .right-text {
+
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                padding: 3rem;
+
+                li a {
+                    padding: 2rem;
+                    color: $color-white;
+                    font-size: 1.7rem;
+                    text-decoration: none;
+                    color: $color-black;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    .intro-line {
+        padding: 35rem 0 0 20rem;
+        color: $color-white;
+        letter-spacing: 1px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 5.5rem;
+        }
+
+        .first-line {
+            font-size: 2.5rem;
+        }
+
+        .second-line {
+            font-size: 3.5rem;
+        }
+
+        .third-line {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.project-section {
+    height: 50rem;
+    background-color: $color-black;
+
+    @include heading-code($color-white);
+
+    .c-underline {
+        @include color-underline(11rem, $color-white);
+
+    }
+
+    .cards-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+
+        .card {
+            background-color: $color-light-dark;
+            color: $color-white;
+            width: 30rem;
+            height: 30rem;
+            border-radius: 1rem;
+
+
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 12rem;
+
+                h2 {
+                    padding-bottom: 1.5rem;
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    background: none;
+                    border: 1px solid $color-dark-blue;
+                    border-radius: .3rem;
+                    color: $color-white;
+                    height: 3rem;
+                    cursor: pointer;
+                    transition: 0.4s ease-in-out;
+
+                    &:hover {
+                        background-color: $color-dark-blue;
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.certifications-content {
+    @include heading-code($color-black);
+
+    .c-underline {
+        @include color-underline(19rem, $color-black);
+
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+
+        .img-container {
+            padding: 10px 6px;
+            float: left;
+
+            width: 24.99999%;
+
+            .gallery {
+                border: 1px solid #ccc;
+                transition: 0.4s ease-in-out;
+
+
+                &:hover {
+                    border: 1px solid #777;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+
+                img {
+                    width: 100%;
+                    height: 25rem;
+                }
+
+                .desc {
+                    padding: 15px;
+                    text-align: center;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}
+
+.experience-content {
+    @include heading-code($color-black);
+
+    .c-underline {
+        @include color-underline(16rem, $color-black);
+
+    }
+
+    .sub-heading {
+        font-size: x-large;
+        padding: 1rem 4rem;
+    }
+
+    .box {
+        width: auto;
+        height: auto;
+        border: 1px solid $color-light-dark;
+        margin: 1rem 4rem;
+        padding: 1rem 4rem;
+        transition: 0.4s ease-in-out;
+        border-radius: 0.5rem;
+
+        &:hover {
+            border: 1px solid $color-dark-blue;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .box-content {
+            font-size: large;
+
+            div {
+                line-height: 3rem;
+            }
+
+            .certificate-btn {
+                width: 8rem;
+                height: 3rem;
+                border-radius: 0.4rem;
+                background-color: $color-dark-blue;
+                cursor: pointer;
+                color: $color-white;
+                border: 1px solid $color-dark-blue;
+                font-size: 1.3rem;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                    background: none;
+                    color: $color-light-dark;
+                }
+            }
+        }
+    }
+}
+
+//skill section styling
+.skills-section {
+    @include heading-code($color-black);
+
+    .c-underline {
+        @include color-underline(9rem, $color-black);
+
+    }
+
+    .container {
+        width: auto;
+        height: auto;
+        border: 1px solid $color-light-dark;
+        margin: 1rem 4rem;
+        padding: 1rem 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .box {
+            border: 1px solid $color-light-dark;
+            width: 30rem;
+            height: 3rem;
+            margin: 2rem;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+                border: 1px solid $color-dark-blue;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .box-content {
+                display: flex;
+                justify-content: center;
+                font-size: 1.5rem;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+}
+
+//about-me section

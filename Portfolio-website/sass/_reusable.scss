@@ -1,0 +1,18 @@
+@mixin color-underline ($width, $color) {
+    width: $width;
+    height: .2rem;
+    background-color: $color;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+//code for heading
+@mixin heading-code($text-color) {
+    .heading {
+        text-align: center;
+        padding: 5rem;
+        font-size: 3.5rem;
+        color: $text-color;
+
+    }
+}

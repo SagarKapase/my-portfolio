@@ -1,0 +1,218 @@
+* {
+  margin: 0; }
+
+html {
+  font-size: 65.5%; }
+
+.header {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+  .header .nav-bar {
+    height: 8rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #006bb3; }
+    .header .nav-bar .left-text {
+      padding: 3rem;
+      font-size: 2.5rem;
+      width: 50%;
+      color: #fff;
+      cursor: pointer; }
+      .header .nav-bar .left-text span {
+        color: black; }
+    .header .nav-bar .right-text ul {
+      list-style-type: none;
+      display: flex;
+      padding: 3rem; }
+      .header .nav-bar .right-text ul li a {
+        padding: 2rem;
+        color: #fff;
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: #000;
+        transition: 0.4s ease-in-out; }
+        .header .nav-bar .right-text ul li a:hover {
+          color: #fff; }
+  .header .intro-line {
+    padding: 35rem 0 0 20rem;
+    color: #fff;
+    letter-spacing: 1px; }
+    .header .intro-line div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 5.5rem; }
+    .header .intro-line .first-line {
+      font-size: 2.5rem; }
+    .header .intro-line .second-line {
+      font-size: 3.5rem; }
+    .header .intro-line .third-line {
+      font-size: 2.5rem; }
+
+.project-section {
+  height: 50rem;
+  background-color: #000; }
+  .project-section .heading {
+    text-align: center;
+    padding: 5rem;
+    font-size: 3.5rem;
+    color: #fff; }
+  .project-section .c-underline {
+    width: 11rem;
+    height: .2rem;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 1rem; }
+  .project-section .cards-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly; }
+    .project-section .cards-container .card {
+      background-color: #222222;
+      color: #fff;
+      width: 30rem;
+      height: 30rem;
+      border-radius: 1rem; }
+      .project-section .cards-container .card .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 12rem; }
+        .project-section .cards-container .card .container h2 {
+          padding-bottom: 1.5rem;
+          font-size: 1.5rem; }
+        .project-section .cards-container .card .container button {
+          background: none;
+          border: 1px solid #006bb3;
+          border-radius: .3rem;
+          color: #fff;
+          height: 3rem;
+          cursor: pointer;
+          transition: 0.4s ease-in-out; }
+          .project-section .cards-container .card .container button:hover {
+            background-color: #006bb3;
+            color: #000; }
+
+.certifications-content .heading {
+  text-align: center;
+  padding: 5rem;
+  font-size: 3.5rem;
+  color: #000; }
+
+.certifications-content .c-underline {
+  width: 19rem;
+  height: .2rem;
+  background-color: #000;
+  margin: auto;
+  margin-top: 1rem; }
+
+.certifications-content .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .certifications-content .container .img-container {
+    padding: 10px 6px;
+    float: left;
+    width: 24.99999%; }
+    .certifications-content .container .img-container .gallery {
+      border: 1px solid #ccc;
+      transition: 0.4s ease-in-out; }
+      .certifications-content .container .img-container .gallery:hover {
+        border: 1px solid #777;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+      .certifications-content .container .img-container .gallery img {
+        width: 100%;
+        height: 25rem; }
+      .certifications-content .container .img-container .gallery .desc {
+        padding: 15px;
+        text-align: center;
+        font-size: large; }
+
+.experience-content .heading {
+  text-align: center;
+  padding: 5rem;
+  font-size: 3.5rem;
+  color: #000; }
+
+.experience-content .c-underline {
+  width: 16rem;
+  height: .2rem;
+  background-color: #000;
+  margin: auto;
+  margin-top: 1rem; }
+
+.experience-content .sub-heading {
+  font-size: x-large;
+  padding: 1rem 4rem; }
+
+.experience-content .box {
+  width: auto;
+  height: auto;
+  border: 1px solid #222222;
+  margin: 1rem 4rem;
+  padding: 1rem 4rem;
+  transition: 0.4s ease-in-out;
+  border-radius: 0.5rem; }
+  .experience-content .box:hover {
+    border: 1px solid #006bb3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .experience-content .box .box-content {
+    font-size: large; }
+    .experience-content .box .box-content div {
+      line-height: 3rem; }
+    .experience-content .box .box-content .certificate-btn {
+      width: 8rem;
+      height: 3rem;
+      border-radius: 0.4rem;
+      background-color: #006bb3;
+      cursor: pointer;
+      color: #fff;
+      border: 1px solid #006bb3;
+      font-size: 1.3rem;
+      transition: 0.4s ease-in-out; }
+      .experience-content .box .box-content .certificate-btn:hover {
+        background: none;
+        color: #222222; }
+
+.skills-section .heading {
+  text-align: center;
+  padding: 5rem;
+  font-size: 3.5rem;
+  color: #000; }
+
+.skills-section .c-underline {
+  width: 9rem;
+  height: .2rem;
+  background-color: #000;
+  margin: auto;
+  margin-top: 1rem; }
+
+.skills-section .container {
+  width: auto;
+  height: auto;
+  border: 1px solid #222222;
+  margin: 1rem 4rem;
+  padding: 1rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .skills-section .container .box {
+    border: 1px solid #222222;
+    width: 30rem;
+    height: 3rem;
+    margin: 2rem;
+    transition: 0.4s ease-in-out; }
+    .skills-section .container .box:hover {
+      border: 1px solid #006bb3;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .skills-section .container .box .box-content {
+      display: flex;
+      justify-content: center;
+      font-size: 1.5rem;
+      padding-top: 0.5rem; }

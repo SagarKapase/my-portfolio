@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* CSS styles for the navbar */
+        .navbar {
+            background-color: transparent;
+            transition: background-color 0.3s;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar.scrolled {
+            background-color: #333;
+            /* Change this to the desired background color */
+        }
+
+        /* Other CSS styles */
+        body {
+            margin: 0;
+            height: 2000px;
+            /* Just for demonstration purposes */
+        }
+
+        .content {
+            margin-top: 200px;
+            /* Just for demonstration purposes */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">Navbar</nav>
+    <div class="content">
+        <!-- Content of the page -->
+    </div>
+
+    <script>
+        // JavaScript code
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            const scrolled = window.scrollY > 0;
+            navbar.classList.toggle('scrolled', scrolled);
+        });
+    </script>
+</body>
+
+</html>
